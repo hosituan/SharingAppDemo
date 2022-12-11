@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9721083C2946366300FBD30F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9721083B2946366300FBD30F /* AppDelegate.swift */; };
 		9721083E2946366300FBD30F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9721083D2946366300FBD30F /* SceneDelegate.swift */; };
-		972108402946366300FBD30F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9721083F2946366300FBD30F /* ViewController.swift */; };
 		972108432946366300FBD30F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972108412946366300FBD30F /* Main.storyboard */; };
 		972108452946366600FBD30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972108442946366600FBD30F /* Assets.xcassets */; };
 		972108482946366600FBD30F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972108462946366600FBD30F /* LaunchScreen.storyboard */; };
@@ -62,6 +61,9 @@
 		972108DB29463FC200FBD30F /* RESTAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972108D629463FC100FBD30F /* RESTAPIService.swift */; };
 		972108DC29463FC200FBD30F /* AlamofireSession+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972108D729463FC100FBD30F /* AlamofireSession+.swift */; };
 		972108DD29463FC200FBD30F /* AlamofireSession+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972108D729463FC100FBD30F /* AlamofireSession+.swift */; };
+		972108E029464BD600FBD30F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972108DF29464BD600FBD30F /* HomeViewController.swift */; };
+		972108E229464BED00FBD30F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972108E129464BED00FBD30F /* DetailViewController.swift */; };
+		972108E429464E2A00FBD30F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972108E329464E2A00FBD30F /* DetailViewController.xib */; };
 		AEB5BC39C5E9264365C9F76B /* Pods_SharingAppDemo1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32E09AE05E443C8093E36DD /* Pods_SharingAppDemo1.framework */; };
 		E8EABD44794CF53D55D34AFD /* Pods_SharingAppDemo2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65656D613049C8BFEB959486 /* Pods_SharingAppDemo2.framework */; };
 /* End PBXBuildFile section */
@@ -73,7 +75,6 @@
 		972108382946366300FBD30F /* SharingAppDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharingAppDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9721083B2946366300FBD30F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9721083D2946366300FBD30F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9721083F2946366300FBD30F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		972108422946366300FBD30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		972108442946366600FBD30F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972108472946366600FBD30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,6 +110,9 @@
 		972108D529463FC100FBD30F /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		972108D629463FC100FBD30F /* RESTAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTAPIService.swift; sourceTree = "<group>"; };
 		972108D729463FC100FBD30F /* AlamofireSession+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlamofireSession+.swift"; sourceTree = "<group>"; };
+		972108DF29464BD600FBD30F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		972108E129464BED00FBD30F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		972108E329464E2A00FBD30F /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		D87555BA031F2C6E1AE91C21 /* Pods-SharingAppDemo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharingAppDemo2.release.xcconfig"; path = "Target Support Files/Pods-SharingAppDemo2/Pods-SharingAppDemo2.release.xcconfig"; sourceTree = "<group>"; };
 		F00BFDFE57A42A2106DE49D9 /* Pods-SharingAppDemo2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharingAppDemo2.debug.xcconfig"; path = "Target Support Files/Pods-SharingAppDemo2/Pods-SharingAppDemo2.debug.xcconfig"; sourceTree = "<group>"; };
 		F32E09AE05E443C8093E36DD /* Pods_SharingAppDemo1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharingAppDemo1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,7 +176,9 @@
 			children = (
 				9721083B2946366300FBD30F /* AppDelegate.swift */,
 				9721083D2946366300FBD30F /* SceneDelegate.swift */,
-				9721083F2946366300FBD30F /* ViewController.swift */,
+				972108DF29464BD600FBD30F /* HomeViewController.swift */,
+				972108E129464BED00FBD30F /* DetailViewController.swift */,
+				972108E329464E2A00FBD30F /* DetailViewController.xib */,
 				972108412946366300FBD30F /* Main.storyboard */,
 				972108442946366600FBD30F /* Assets.xcassets */,
 				972108462946366600FBD30F /* LaunchScreen.storyboard */,
@@ -343,6 +349,7 @@
 				972108482946366600FBD30F /* LaunchScreen.storyboard in Resources */,
 				972108452946366600FBD30F /* Assets.xcassets in Resources */,
 				972108432946366300FBD30F /* Main.storyboard in Resources */,
+				972108E429464E2A00FBD30F /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,16 +453,17 @@
 			files = (
 				972108CB2946397300FBD30F /* UIApplication+.swift in Sources */,
 				972108DC29463FC200FBD30F /* AlamofireSession+.swift in Sources */,
+				972108E229464BED00FBD30F /* DetailViewController.swift in Sources */,
 				972108AF2946397300FBD30F /* UIGestureRecognize+.swift in Sources */,
 				972108B32946397300FBD30F /* Array+.swift in Sources */,
 				972108BB2946397300FBD30F /* UIBarButtonItem+.swift in Sources */,
 				972108B72946397300FBD30F /* String+.swift in Sources */,
 				972108C12946397300FBD30F /* UIButton+.swift in Sources */,
-				972108402946366300FBD30F /* ViewController.swift in Sources */,
 				9721083C2946366300FBD30F /* AppDelegate.swift in Sources */,
 				972108AB2946397300FBD30F /* UINavigationView+.swift in Sources */,
 				972108D829463FC100FBD30F /* Requestable.swift in Sources */,
 				972108B12946397300FBD30F /* NSObject+.swift in Sources */,
+				972108E029464BD600FBD30F /* HomeViewController.swift in Sources */,
 				972108B52946397300FBD30F /* UIView+.swift in Sources */,
 				972108DA29463FC200FBD30F /* RESTAPIService.swift in Sources */,
 				972108BF2946397300FBD30F /* URL+.swift in Sources */,
@@ -669,6 +677,21 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"InjectHotReload\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"Then\"",
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hosituan.sharing.1.SharingAppDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
