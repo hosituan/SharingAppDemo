@@ -1,0 +1,6 @@
+framework module Pods_SharingAppDemo2 {
+  umbrella header "Pods-SharingAppDemo2-umbrella.h"
+
+  export *
+  module * { export * }
+}
