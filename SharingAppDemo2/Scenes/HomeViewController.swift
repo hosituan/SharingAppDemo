@@ -24,7 +24,10 @@ class HomeViewController: UIViewController {
         $0.layer.cornerRadius = 12
         $0.layer.masksToBounds = true
     }
-    
+    let updateButton = UIButton().then {
+        $0.setTitle("Update constraint", for: .normal)
+        $0.setTitleColor(.blue, for: .normal)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -33,19 +36,29 @@ class HomeViewController: UIViewController {
     }
     
     func setupView() {
-        view.addSubviews(centerLabel, button)
+        view.addSubviews(centerLabel, button, updateButton)
         centerLabel.snp.makeConstraints { make in
-            make.center.equalToSuperview()
-        }
-        button.snp.makeConstraints { make in
-            make.top.equalTo(centerLabel.snp.bottom).offset(12)
-            make.height.equalTo(56)
-            make.width.equalTo(240)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(16)
             make.centerX.equalToSuperview()
         }
         
+        button.snp.makeConstraints { make in
+            make.height.equalTo(56)
+            make.width.equalTo(240)
+            make.center.equalToSuperview()
+        }
+        updateButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(button.snp.bottom).offset(40)
+        }
         button.setAction { [weak self] in
             self?.navigateToDetail()
+        }
+        updateButton.setAction { [weak self] in
+            guard let self = self else { return }
+            self.centerLabel.snp.updateConstraints({ make in
+                make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(30)
+            })
         }
     }
     

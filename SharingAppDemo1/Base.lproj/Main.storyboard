@@ -31,6 +31,11 @@
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMJ-qX-1qM">
+                                <rect key="frame" x="117.66666666666669" y="479.66666666666669" width="155" height="79.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Update constaint"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -39,12 +44,17 @@
                             <constraint firstItem="yPJ-nk-BXO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CRu-hX-cW0"/>
                             <constraint firstItem="yPJ-nk-BXO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IsZ-G6-qEL"/>
                             <constraint firstItem="tM5-6B-C2N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="ORx-jj-Z6s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dMJ-qX-1qM" secondAttribute="bottom" constant="251" id="YnX-h6-d3v"/>
+                            <constraint firstItem="dMJ-qX-1qM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yo3-5z-CYz"/>
+                            <constraint firstItem="dMJ-qX-1qM" firstAttribute="top" secondItem="yPJ-nk-BXO" secondAttribute="bottom" constant="40" id="fd9-1j-qy8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="u0d-TW-eCX"/>
                     <connections>
                         <outlet property="detailButton" destination="yPJ-nk-BXO" id="MJs-XT-x9x"/>
                         <outlet property="exampleLabel" destination="tM5-6B-C2N" id="k4G-VD-Zp7"/>
+                        <outlet property="labelToTop" destination="ORx-jj-Z6s" id="pt7-vD-NnG"/>
+                        <outlet property="updateButton" destination="dMJ-qX-1qM" id="k0Z-jU-g8b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
