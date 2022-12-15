@@ -21,8 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail screen2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeT-Mv-ASg">
-                    <rect key="frame" x="140.33333333333334" y="147" width="109.33333333333334" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail screen new" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeT-Mv-ASg">
+                    <rect key="frame" x="127.33333333333333" y="65" width="135.33333333333337" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -36,20 +36,30 @@
                     </buttonConfiguration>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bPE-6y-qqE">
-                    <rect key="frame" x="16" y="455.66666666666674" width="358" height="354.33333333333326"/>
+                    <rect key="frame" x="16" y="455.66666666666674" width="350" height="354.33333333333326"/>
                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="new label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft3-eY-5RA">
+                    <rect key="frame" x="16" y="239" width="170" height="21"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.74117647060000003" green="0.1647058824" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="dJW-fM-CrE"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="NeT-Mv-ASg" firstAttribute="centerX" secondItem="2mW-Id-xcg" secondAttribute="centerX" id="3I5-44-qYj"/>
-                <constraint firstItem="bPE-6y-qqE" firstAttribute="top" secondItem="ne5-VS-KYE" secondAttribute="bottom" constant="16" id="AgV-zC-iaf"/>
-                <constraint firstItem="dJW-fM-CrE" firstAttribute="trailing" secondItem="bPE-6y-qqE" secondAttribute="trailing" constant="16" id="BEQ-Pl-cgP"/>
+                <constraint firstItem="dJW-fM-CrE" firstAttribute="trailing" secondItem="Ft3-eY-5RA" secondAttribute="trailing" constant="204" id="7Mf-Ar-ya3"/>
+                <constraint firstItem="bPE-6y-qqE" firstAttribute="top" secondItem="ne5-VS-KYE" secondAttribute="bottom" priority="999" constant="16" id="AgV-zC-iaf"/>
+                <constraint firstItem="dJW-fM-CrE" firstAttribute="trailing" secondItem="bPE-6y-qqE" secondAttribute="trailing" constant="24" id="BEQ-Pl-cgP"/>
                 <constraint firstItem="dJW-fM-CrE" firstAttribute="bottom" secondItem="bPE-6y-qqE" secondAttribute="bottom" id="K8S-5i-qyI"/>
                 <constraint firstItem="ne5-VS-KYE" firstAttribute="centerX" secondItem="2mW-Id-xcg" secondAttribute="centerX" id="Pdr-pJ-QEe"/>
+                <constraint firstItem="Ft3-eY-5RA" firstAttribute="top" secondItem="NeT-Mv-ASg" secondAttribute="bottom" constant="153" id="RCf-fb-6B9"/>
+                <constraint firstItem="Ft3-eY-5RA" firstAttribute="leading" secondItem="dJW-fM-CrE" secondAttribute="leading" constant="16" id="SnG-Sq-Dal"/>
                 <constraint firstItem="ne5-VS-KYE" firstAttribute="centerY" secondItem="2mW-Id-xcg" secondAttribute="centerY" id="fY9-0n-l5N"/>
-                <constraint firstItem="NeT-Mv-ASg" firstAttribute="top" secondItem="dJW-fM-CrE" secondAttribute="top" constant="100" id="ngH-yD-cds"/>
+                <constraint firstItem="NeT-Mv-ASg" firstAttribute="top" secondItem="dJW-fM-CrE" secondAttribute="top" constant="18" id="ngH-yD-cds"/>
                 <constraint firstItem="bPE-6y-qqE" firstAttribute="leading" secondItem="dJW-fM-CrE" secondAttribute="leading" constant="16" id="trL-Tr-3pM"/>
             </constraints>
             <point key="canvasLocation" x="1930.7692307692307" y="379.62085308056868"/>
@@ -61,6 +71,9 @@
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
