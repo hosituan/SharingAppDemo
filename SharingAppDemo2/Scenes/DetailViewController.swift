@@ -12,12 +12,12 @@ import Alamofire
 
 class DetailViewController: UIViewController {
     let exampleLabel = UILabel().then {
-        $0.text = "Detail screen"
+        $0.text = "Detail screen 2"
     }
     let fetchButton = UIButton().then {
         $0.setTitle("Fetch Data", for: .normal)
-        $0.backgroundColor = .blue
-        $0.cornerRadius = 5
+        $0.backgroundColor = .red
+        $0.cornerRadius = 12
     }
     let stackView = UIStackView().then {
         $0.axis = .vertical
@@ -42,6 +42,8 @@ class DetailViewController: UIViewController {
         fetchButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.height.equalTo(56)
+            make.width.equalTo(240)
         }
         fetchButton.setAction { [weak self] in
             self?.fetchFromAPI()

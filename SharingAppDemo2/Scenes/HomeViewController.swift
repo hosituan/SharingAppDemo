@@ -28,11 +28,40 @@ class HomeViewController: UIViewController {
         $0.setTitle("Update constraint", for: .normal)
         $0.setTitleColor(.blue, for: .normal)
     }
+    
+    
+    let newView1 = UIView()
+    
+    func addConstraintOld() {
+        view.addSubview(newView1)
+        newView1.backgroundColor = .red
+        newView1.translatesAutoresizingMaskIntoConstraints = false
+        let horizontalConstraint = NSLayoutConstraint(item: newView1, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
+        let verticalConstraint = NSLayoutConstraint(item: newView1, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 0)
+        let widthConstraint = NSLayoutConstraint(item: newView1, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100)
+        let heightConstraint = NSLayoutConstraint(item: newView1, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 100)
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+    }
+    
+    let newView2 = UIView().then {
+        $0.backgroundColor = .green
+    }
+    func addConstraintSnapKit() {
+        view.addSubview(newView2)
+        newView2.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.height.width.equalTo(100)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "Home"
-        setupView()
+        //setupView()
+        //addConstraintOld()
+        addConstraintSnapKit()
     }
     
     func setupView() {
@@ -66,4 +95,5 @@ class HomeViewController: UIViewController {
         let detailVC = Inject.ViewControllerHost(DetailViewController())
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
+    
 }

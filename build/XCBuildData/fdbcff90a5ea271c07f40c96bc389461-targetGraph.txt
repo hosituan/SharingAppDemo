@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+SharingAppDemo1 in SharingAppDemo1, no dependencies
