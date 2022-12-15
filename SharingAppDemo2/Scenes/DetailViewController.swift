@@ -12,7 +12,10 @@ import Alamofire
 
 class DetailViewController: UIViewController {
     let exampleLabel = UILabel().then {
-        $0.text = "Detail screen 2"
+        $0.text = "Detail screen new"
+    }
+    let newLabel = UILabel().then {
+        $0.text = "new label"
     }
     let fetchButton = UIButton().then {
         $0.setTitle("Fetch Data", for: .normal)
@@ -52,6 +55,11 @@ class DetailViewController: UIViewController {
             make.top.equalTo(fetchButton.snp.bottom).offset(20)
             make.left.equalToSuperview().offset(16)
             make.right.equalToSuperview().inset(16)
+        }
+        newLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(40)
+            make.left.equalToSuperview().offset(24)
+            make.right.equalToSuperview().offset(16)
         }
     }
     
